@@ -1,6 +1,6 @@
 function Prompt
 {
-"[" + $env:USERNAME + "@" + $env:COMPUTERNAME + "]-[" + (Get-Location) + "]`nPS> "
+"$($PSStyle.Background.Green)$($PSStyle.Bold)" + $env:USERNAME + "@" + $env:COMPUTERNAME + " $($PSStyle.Background.BrightCyan) " + (Get-Location) + "$($PSStyle.Reset)`nPS> "
 }
 
 function b64d ($str) {
